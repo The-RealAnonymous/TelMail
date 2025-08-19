@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TelMail Coming Soon</title>
+<style>
+    /* Reset styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Arial', sans-serif;
+        color: #fff;
+        overflow: hidden;
+        background: linear-gradient(-45deg, #ff006e, #8338ec, #3a86ff, #06d6a0);
+        background-size: 400% 400%;
+        animation: gradientBG 12s ease infinite;
+    }
+
+    @keyframes gradientBG {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
+    }
+
+    .container {
+        text-align: center;
+        animation: fadeIn 3s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: scale(0.8);}
+        to {opacity: 1; transform: scale(1);}
+    }
+
+    h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        background: linear-gradient(90deg, #ffdd00, #ff4e00, #ff00e0);
+        background-size: 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textShine 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes textShine {
+        0% {background-position: 0%;}
+        100% {background-position: 100%;}
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin-top: 20px;
+        color: #fff;
+        opacity: 0.8;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0%, 100% {opacity: 0.8;}
+        50% {opacity: 1;}
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>TelMail Coming Soon</h1>
+        <p>Stay tuned for something amazing...</p>
+    </div>
+</body>
+</html>
