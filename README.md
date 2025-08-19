@@ -1,2 +1,1 @@
-# TelMail
-The official TelMail Website
+# TelMail 😉
